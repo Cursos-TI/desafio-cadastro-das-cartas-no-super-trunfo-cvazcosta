@@ -121,7 +121,7 @@ int main() {
         printf("Carta 2: R$ %.2f\n", pib2);
         printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
     } else {
-        printf("Comparação de Cartas - Atributo: PIB\n");
+        printf("\n\n *** Comparação de Cartas - Atributo: PIB ***\n");
         printf("Carta 1: R$ %.2f\n", pib1);
         printf("Carta 2: R$ %.2f\n", pib2);
         printf("Resultado: Carta 2 (%s) venceu!\n", nome_cidade2);
