@@ -114,24 +114,18 @@ int main() {
     pib_pc2 +
     (1 / densidade_pop2);
 
-    // Comparação dos atributos
-    populacao = populacao1 > populacao2;
-    area = area1 > area2;
-    pib = pib1 > pib2;
-    pontos_turisticos = pontos_turisticos1 > pontos_turisticos2;
-    densidade_pop = densidade_pop1 < densidade_pop2;
-    pib_pc = pib_pc1 > pib_pc2;
-    sup_poder = sup_poder1 > sup_poder2;
-
-    // Imprimindo o resultado das comparações
-    printf("\nComparação de cartas\n");
-    printf("\nPopulação - Carta 1 venceu?: %d\n", populacao);
-    printf("Área - Carta 1 venceu?: %d\n", area);
-    printf("PIB - Carta 1 venceu?: %d\n", pib);
-    printf("Pontos Turísticos - Carta 1 venceu?: %d\n", pontos_turisticos);
-    printf("Densidade Populacional - Carta 1 venceu?: %d\n", densidade_pop);
-    printf("PIB Per Capita - Carta 1 venceu?: %d\n", pib_pc);
-    printf("Super Poder - Carta 1 venceu?: %d\n", sup_poder);
+    // Comparação do atributo PIB
+    if (pib1 > pib2) {
+        printf("\n\n*** Comparação de Cartas - Atributo: PIB ***\n");
+        printf("Carta 1: R$ %.2f\n", pib1);
+        printf("Carta 2: R$ %.2f\n", pib2);
+        printf("Resultado: Carta 1 (%s) venceu!\n", nome_cidade1);
+    } else {
+        printf("Comparação de Cartas - Atributo: PIB\n");
+        printf("Carta 1: R$ %.2f\n", pib1);
+        printf("Carta 2: R$ %.2f\n", pib2);
+        printf("Resultado: Carta 2 (%s) venceu!\n", nome_cidade2);
+    }
 
     return 0;
 }
